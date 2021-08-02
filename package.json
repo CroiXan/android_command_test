@@ -1,0 +1,31 @@
+{
+  "name": "voice",
+  "version": "0.0.1",
+  "description": "This plugin brings push notifications, analytics, event tracking, crash reporting and more from Google Firebase to your Cordova project. Android and iOS supported.",
+  "cordova": {
+    "id": "voice",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=8.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=5.1.1"
+    }
+  ],
+  "author": "",
+  "license": "MIT"
+}

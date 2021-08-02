@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<actions>
+    <action intentName="custom.actions.intent.Activities.BeneficiosPedidosYa" queryPatterns="@array/QueriesBeneficios">
+        <fulfillment urlTemplate="https://actions.entelpoc.cl/beneficios" />
+    </action>
+    <action intentName="custom.actions.intent.Activities.MisBoletas" queryPatterns="@array/QueriesMisBoletas">
+        <fulfillment urlTemplate="https://actions.entelpoc.cl/misboletas" />
+    </action>
+    <action intentName="custom.actions.intent.Activities.BeneficiosStarbucks" queryPatterns="@array/QueriesStarbucks">
+        <fulfillment urlTemplate="https://actions.entelpoc.cl/starbucks" />
+    </action>
+</actions>

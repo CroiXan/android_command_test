@@ -16,9 +16,7 @@
       <manifest xmlns:tools="http://schemas.android.com/tools"/>
     </edit-config>
     <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application>
 		<meta-data android:name="com.google.android.actions" android:resource="@xml/actions" />
-	  </application>
     </config-file>
 	
 	<framework src="android/build.gradle" custom="true" type="gradleReference" />

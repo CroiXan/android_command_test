@@ -1,17 +1,33 @@
 {
-  "name": "voice",
-  "version": "0.0.1",
-  "description": "This plugin brings push notifications, analytics, event tracking, crash reporting and more from Google Firebase to your Cordova project. Android and iOS supported.",
+  "_from": "git+https://github.com/CroiXan/android_command_test.git",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/voice",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/CroiXan/android_command_test",
+    "rawSpec": "https://github.com/CroiXan/android_command_test",
+    "saveSpec": "git+https://github.com/CroiXan/android_command_test.git",
+    "fetchSpec": "https://github.com/CroiXan/android_command_test.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/CroiXan/android_command_test.git#c4dc8cd3e0fa188e75eb6661fb41d355b4bcdbc3",
+  "_spec": "https://github.com/CroiXan/android_command_test",
+  "_where": "E:\\Android\\TestCordova\\testvoice",
+  "author": "",
   "cordova": {
     "id": "voice",
     "platforms": [
       "android"
     ]
   },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-android"
-  ],
+  "deprecated": false,
+  "description": "This plugin brings push notifications, analytics, event tracking, crash reporting and more from Google Firebase to your Cordova project. Android and iOS supported.",
   "engines": [
     {
       "name": "cordova",
@@ -26,6 +42,11 @@
       "version": ">=5.1.1"
     }
   ],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "voice",
+  "version": "0.0.1"
 }

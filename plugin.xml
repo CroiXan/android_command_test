@@ -5,20 +5,23 @@
 
   <name>Voice</name>
   <license>MIT</license>
-
-  <engines>
-	<engine name="cordova" version=">=7.1.0"/>
-	<engine name="cordova-android" version=">=8.1.0"/>
-	<engine name="cordova-ios" version=">=5.1.1"/>
-  </engines>
+  
+  <dependency id="cordova-plugin-settings-hook" url="https://github.com/mircoc/cordova-plugin-settings-hook"/>
 
   <platform name="android">
-	<hook type="before_prepare" src="hooks/copy_resources.js" />
-
-	<config-file target="AndroidManifest.xml" parent="/manifest/application" mode="replace">
-		<meta-data
-			android:name="com.google.android.actions"
-			android:resource="@xml/actions" />
-	</config-file>
+	
+	<hook type="before_plugin_install" src="hooks/copy_resources.js" />
+	
+    <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+      <manifest xmlns:tools="http://schemas.android.com/tools"/>
+    </edit-config>
+    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+      <application>
+		<meta-data android:name="com.google.android.actions" android:resource="@xml/actions" />
+	  </application>
+    </config-file>
+	
+	<framework src="android/build.gradle" custom="true" type="gradleReference" />
+	<framework src="com.google.gms:google-services:4.3.10" />
   </platform>
 </plugin>

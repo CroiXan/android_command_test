@@ -3,23 +3,13 @@
   xmlns="http://apache.org/cordova/ns/plugins/1.0" 
   xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <name>Voice</name>
-  <license>MIT</license>
+	<name>Voice</name>
+	<license>MIT</license>
   
-  <dependency id="cordova-plugin-settings-hook" url="https://github.com/mircoc/cordova-plugin-settings-hook"/>
-
-  <platform name="android">
+	<dependency id="android-manifest" url="https://github.com/CroiXan/cordova-android-manifest#1.0.0"/>
+  
+	<platform name="android">
+		<hook type="before_plugin_install" src="hooks/copy_resources.js" />
+	</platform>
 	
-	<hook type="before_plugin_install" src="hooks/copy_resources.js" />
-	
-    <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
-      <manifest xmlns:tools="http://schemas.android.com/tools"/>
-    </edit-config>
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-		<meta-data android:name="com.google.android.actions" android:resource="@xml/actions" />
-    </config-file>
-	
-	<framework src="android/build.gradle" custom="true" type="gradleReference" />
-	<framework src="com.google.gms:google-services:4.3.10" />
-  </platform>
 </plugin>

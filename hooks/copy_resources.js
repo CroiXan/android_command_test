@@ -12,8 +12,6 @@ var rootdir = './';
 
 var fs = require('fs');
 var path = require('path');
-var parseString = require("xml2js").parseString;
-var xml2js = require("xml2js");
 
 function copyFileSync( source, target ) {
 

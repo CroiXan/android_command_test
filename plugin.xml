@@ -6,10 +6,12 @@
 	<name>Voice</name>
 	<license>MIT</license>
   
-	<dependency id="android-manifest" url="https://github.com/CroiXan/cordova-android-manifest#1.0.0"/>
-  
 	<platform name="android">
 		<hook type="before_plugin_install" src="hooks/copy_resources.js" />
+		
+		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+			<meta-data android:name="com.google.android.actions" android:resource="@xml/actions" />
+		</edit-config>
 	</platform>
 	
 </plugin>
